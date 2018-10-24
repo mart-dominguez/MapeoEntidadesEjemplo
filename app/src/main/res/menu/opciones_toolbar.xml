@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/mnuCrearDepto" android:title="Crear Depto" app:showAsAction="never"></item>
+    <item android:id="@+id/mnuCrearEmpleado" android:title="Crear Emp" app:showAsAction="never"></item>
+    <item android:id="@+id/mnuCrearProyecto" android:title="Crear Proyecto" app:showAsAction="never"></item>
+    <item android:id="@+id/mnuBorrarTodo" android:title="Borrar todo" app:showAsAction="never"></item>
+    <item android:id="@+id/mnuConsultarDeptos" android:title="Consulta Depto" app:showAsAction="never"></item>
+    <item android:id="@+id/mnuConsultarEmpleados" android:title="Consulta Empleados" app:showAsAction="never"></item>
+    <item android:id="@+id/mnuConsultarProy" android:title="Consulta Proyectos" app:showAsAction="never"></item>
+</menu>
