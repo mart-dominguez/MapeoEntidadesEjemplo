@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 
@@ -230,6 +231,8 @@ public class MainActivity extends AppCompatActivity {
 
         Random r = new Random();
         e1.setNombre(" Empleado _ " + r.nextInt(1000));
+        e1.setFechaContrato(new Date());
+        e1.setEstado(Empleado.Estado.CONTRATO);
         e1.setTrabajaEn(lista.get(r.nextInt(lista.size())));
         empDao.insert(e1);
         return consultaEmpleados();
@@ -249,6 +252,7 @@ public class MainActivity extends AppCompatActivity {
         StringBuilder resultado = new StringBuilder(" === EMPLEADOS === "+ "\r\n");
         for (Empleado d : empleadoLista) {
             resultado.append(d.getId() + ": " + d.getNombre() + d.getTrabajaEn().getNombre() + "\r\n");
+            resultado.append(d.getFechaContrato().getTime()+  ":"+d.getEstado().toString() + "\r\n");
         }
         return resultado.toString();
     }
